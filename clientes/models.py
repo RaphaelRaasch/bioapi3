@@ -1,10 +1,12 @@
 from django.db import models
+from usuarios.models import CustomUsuario
 
 
 class Cliente(models.Model):
     id_multidev = models.IntegerField('Id Multidev')
     razao_social = models.CharField('Razão Social', max_length=115)
     fantasia = models.CharField('Nome Fantasia', max_length=115)
+    gestao = models.ForeignKey(CustomUsuario, on_delete=models.CASCADE)
     logradouro = models.CharField('Logradouro', max_length=115, blank=True, null=True)
     bairro = models.CharField('Bairro', max_length=115, blank=True, null=True)
     municipio = models.CharField('Municipio', max_length=115, blank=True, null=True) 
@@ -16,13 +18,3 @@ class Cliente(models.Model):
         return self.fantasia
 
 
-
-
-
-"""
-id_multidev int
-razao_social varchar(115)
-fantasia varchar(115)
-latitude
-longitude
-"""

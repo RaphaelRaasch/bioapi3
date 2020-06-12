@@ -25,7 +25,7 @@ SECRET_KEY = '9+#2bdee^et_)-4*ekwg(kx8ewf&-o@*7%le%n$#nuzsf!f(6u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.multidev.com.br', 'multidev.com.br']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,6 +80,12 @@ WSGI_APPLICATION = 'biotrack.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+'''DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -140,5 +146,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/multidev/www/static'
 AUTH_USER_MODEL = 'usuarios.CustomUsuario'
