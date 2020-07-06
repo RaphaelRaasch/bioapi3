@@ -14,9 +14,6 @@ class Cliente(models.Model):
     latitude = models.CharField('Latitude', max_length=100)
     longitude = models.CharField('Longitude', max_length=100)
 
-    """
-    Teste
-    """
 
     def __str__(self):
         return self.fantasia
