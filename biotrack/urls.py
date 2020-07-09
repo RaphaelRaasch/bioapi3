@@ -7,22 +7,17 @@ from caminhoes.views import CaminhaoViewSet
 from clientes.views import ClienteViewSet
 from motoristas.views import MotoristaViewSet
 from mtr.views import MtrViewSet
-<<<<<<< Updated upstream
-from sequencia.views import SequenciaViewSet
-=======
 from sequencia.views import SequenciaViewset
->>>>>>> Stashed changes
 
 router = routers.DefaultRouter()
 router.register(r'mtr', MtrViewSet)
 router.register(r'cliente', ClienteViewSet)
-<<<<<<< Updated upstream
-router.register(r'sequencia', SequenciaViewSet)
-=======
+
+
 router.register(r'sequencia', SequenciaViewset)
 router.register(r'motoristas', MotoristaViewSet)
 router.register(r'caminhao', CaminhaoViewSet)
->>>>>>> Stashed changes
+
 
 
 urlpatterns = [
