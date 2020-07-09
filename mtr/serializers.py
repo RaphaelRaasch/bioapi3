@@ -4,10 +4,18 @@ from clientes.serializers import ClienteSerializer
 
 class MtrSerializer(ModelSerializer):
     
+<<<<<<< Updated upstream
 
     class Meta:
         model = Mtr
         fields = ('id', 'numero', 'motorista', 'caminhao', 'alias', 'saida', 'chegada')
+=======
+    #cliente = ClienteSerializer(many=True)
+
+    class Meta:
+        model = Mtr
+        fields = ('id', 'numero', 'motorista', 'alias', 'saida', 'chegada', 'caminhao')
+>>>>>>> Stashed changes
 
 
 '''
