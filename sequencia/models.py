@@ -12,5 +12,3 @@ class Sequencia(models.Model):
     bairro = models.CharField('Bairro', max_length=155)
     municipio = models.CharField('Municipio', max_length=155)
     estado = models.CharField('Estado', max_length=155)
-
->>>>>>> Stashed changes
