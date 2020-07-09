@@ -8,5 +8,4 @@ class Sequencia(models.Model):
     numero = models.IntegerField('Numero')
     bairro = models.CharField('Bairro', max_length=155)
     municipio = models.CharField('Municipio', max_length=155)
-    complemento = models.CharField('Complemento', max_length=155)
     

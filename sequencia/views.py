@@ -7,3 +7,5 @@ from sequencia.serializers import SequenciaSerializer
 class SequenciaViewSet(ModelViewSet):
     queryset = Sequencia.objects.all()
     serializer_class = SequenciaSerializer
+
+#teste

@@ -8,4 +8,4 @@ class SequenciaSerializer(ModelSerializer):
 
     class Meta:
         model = Sequencia
-        fields = ('position', 'rua','numero','bairro','municipio','complemento',)
+        fields = ('position', 'rua','numero','bairro','municipio','complemento', 'cliente')
