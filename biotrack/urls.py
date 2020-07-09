@@ -22,12 +22,14 @@ from caminhoes.views import CaminhaoViewSet
 from clientes.views import ClienteViewSet
 from motoristas.views import MotoristaViewSet
 from mtr.views import MtrViewSet
+from sequencia.views import SequenciaViewSet
 
 router = routers.DefaultRouter()
 router.register(r'motoristas', MotoristaViewSet)
 router.register(r'mtr', MtrViewSet)
 router.register(r'caminhao', CaminhaoViewSet)
 router.register(r'cliente', ClienteViewSet)
+router.register(r'sequencia', SequenciaViewSet)
 
 
 urlpatterns = [

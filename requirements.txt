@@ -3,3 +3,4 @@ Django==2.2.5
 django-filter==2.2.0
 django-filters==0.2.1
 djangorestframework==3.11.0
+

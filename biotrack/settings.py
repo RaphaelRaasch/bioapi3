@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'caminhoes',
     'clientes',
     'motoristas',
+    'sequencia',
     'mtr',
     'rest_framework',
     'rest_framework.authtoken'
@@ -121,13 +122,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 #AuthenticationJWT
-REST_FRAMEWORK  = {
+'''REST_FRAMEWORK  = {
     'DEFAULT_AUTHENTICATION_CLASSES' : (
         'rest_framework.authentication.TokenAuthentication' ,
     ),
     'DEFAULT_PERMISSION_CLASSES' : (
         'rest_framework.permissions.IsAuthenticated' ,)
-}
+}'''
 
 
 
