@@ -1,12 +1,9 @@
 
 from rest_framework.serializers import ModelSerializer
-from .models import Sequencia
-from clientes.serializers import ClienteSerializer 
+from .models import Sequencia 
 
 
 class SequenciaSerializers(ModelSerializer):
-    cliente = ClienteSerializer(many=False)
-
     
     class Meta:
         model = Sequencia

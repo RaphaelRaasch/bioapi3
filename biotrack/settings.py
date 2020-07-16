@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'motoristas',
     'sequencia',
     'mtr',
-    'sequencia',
     'rest_framework',
     'rest_framework.authtoken'
 ]
