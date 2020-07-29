@@ -12,7 +12,6 @@ class Mtr(models.Model):
     saida = models.DateTimeField('Data e hora da saida', blank=True, null=True)
     chegada = models.DateTimeField('Data e hora da chegada', blank=True, null=True)
     caminhao = models.ForeignKey(Caminhoes, on_delete=models.CASCADE)
-
     def __str__(self):
        return self.alias
 

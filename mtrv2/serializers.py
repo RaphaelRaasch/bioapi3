@@ -7,6 +7,6 @@ class Mtrv2Serializer(ModelSerializer):
     sequencia = ()
     class Meta:
         model = MtrV2
-        fields = ('mtr','motorista','sequencia')
+        fields = ('mtr','sequencia')
 
 
