@@ -7,10 +7,12 @@ from caminhoes.views import CaminhaoViewSet
 from clientes.views import ClienteViewSet
 from motoristas.views import MotoristaViewSet
 from mtr.views import MtrViewSet
+from mtrv2.views import MtrV2ViewSet
 from sequencia.views import SequenciaViewset
 
 router = routers.DefaultRouter()
 router.register(r'mtr', MtrViewSet)
+router.register(r'mtrv2', MtrV2ViewSet)
 router.register(r'cliente', ClienteViewSet)
 
 

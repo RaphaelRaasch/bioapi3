@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from .models import MtrV2
+from rest_framework.viewsets import ModelViewSet
+from .serializers import Mtrv2Serializer
 
-# Create your views here.
+
+class MtrV2ViewSet(ModelViewSet):
+    queryset = MtrV2.objects.all()
+    serializer_class = Mtrv2Serializer
