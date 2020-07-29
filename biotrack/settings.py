@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'motoristas',
     'sequencia',
     'mtr',
-    'mtrv2',
+    'mtritem',
     'rest_framework',
     'rest_framework.authtoken'
 ]
@@ -81,7 +81,6 @@ WSGI_APPLICATION = 'biotrack.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
