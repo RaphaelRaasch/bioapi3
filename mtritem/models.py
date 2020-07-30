@@ -7,3 +7,7 @@ from sequencia.models import Sequencia
 class MtrItem(models.Model):
     mtr = models.ForeignKey(Mtr, on_delete=models.CASCADE)
     sequencia = models.ManyToManyField(Sequencia)
+
+    def __str__(self):
+        return f'{self.mtr}'
+    
